@@ -1,0 +1,59 @@
+Table store {
+id_store int [pk, increment] // Identificador único da unidade
+loc_ref varchar(50) [unique, not null] // Referência da unidade (locRef)
+}
+
+Table guest_check {
+id_guest_check int [pk, increment] // Identificador da comanda
+store_id int [not null, ref: > store.id_store] // FK para store
+chk_num int
+opn_bus_dt date
+opn_utc datetime
+clsd_bus_dt date
+clsd_utc datetime
+gst_cnt int
+sub_ttl decimal(10,2)
+chk_ttl decimal(10,2)
+dsc_ttl decimal(10,2)
+pay_ttl decimal(10,2)
+bal_due_ttl decimal(10,2)
+tbl_num int
+tbl_name varchar(50)
+emp_num int
+clsd_flag boolean
+}
+
+Table detail_line {
+id_detail_line int [pk, increment]
+guest_check_id int [not null, ref: > guest_check.id_guest_check]
+line_num int
+dtl_id int
+detail_utc datetime
+bus_dt date
+dsp_ttl decimal(10,2)
+dsp_qty decimal(10,2)
+agg_ttl decimal(10,2)
+agg_qty decimal(10,2)
+seat_num int
+svc_rnd_num int
+}
+
+Table menu_item {
+id_menu_item int [pk, increment]
+detail_line_id int [not null, ref: > detail_line.id_detail_line]
+mi_num int
+mod_flag boolean
+incl_tax decimal(10,2)
+prc_lvl int
+active_taxes varchar(20)
+}
+
+Table tax {
+id_tax int [pk, increment]
+guest_check_id int [not null, ref: > guest_check.id_guest_check]
+tax_num int
+txbl_sls_ttl decimal(10,2)
+tax_coll_ttl decimal(10,2)
+tax_rate decimal(5,4)
+type int
+}
