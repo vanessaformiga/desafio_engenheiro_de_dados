@@ -1,4 +1,3 @@
-
 CREATE TABLE store (
   id_store SERIAL PRIMARY KEY,
   loc_ref VARCHAR(50) UNIQUE NOT NULL

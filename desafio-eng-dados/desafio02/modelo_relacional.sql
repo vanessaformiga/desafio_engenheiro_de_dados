@@ -3,9 +3,8 @@ CREATE TABLE store (
   loc_ref VARCHAR(50) UNIQUE NOT NULL
 ) ENGINE=InnoDB;
 
-
 CREATE TABLE guest_check (
-  id_guest_check INT PRIMARY KEY,
+  id_guest_check INT PRIMARY KEY AUTO_INCREMENT, 
   store_id INT NOT NULL,
   chk_num INT,
   opn_bus_dt DATE,
@@ -22,12 +21,11 @@ CREATE TABLE guest_check (
   tbl_name VARCHAR(50),
   emp_num INT,
   clsd_flag TINYINT(1),
-  FOREIGN KEY (store_id) REFERENCES store(id_store)
+  FOREIGN KEY (store_id) REFERENCES store(id_store) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
-
 CREATE TABLE detail_line (
-  id_detail_line INT PRIMARY KEY,
+  id_detail_line INT PRIMARY KEY AUTO_INCREMENT, 
   guest_check_id INT NOT NULL,
   line_num INT,
   dtl_id INT,
@@ -39,9 +37,8 @@ CREATE TABLE detail_line (
   agg_qty DECIMAL(10,2),
   seat_num INT,
   svc_rnd_num INT,
-  FOREIGN KEY (guest_check_id) REFERENCES guest_check(id_guest_check)
+  FOREIGN KEY (guest_check_id) REFERENCES guest_check(id_guest_check) ON DELETE CASCADE
 ) ENGINE=InnoDB;
-
 
 CREATE TABLE menu_item (
   id_menu_item INT PRIMARY KEY AUTO_INCREMENT,
@@ -51,7 +48,7 @@ CREATE TABLE menu_item (
   incl_tax DECIMAL(10,2),
   prc_lvl INT,
   active_taxes VARCHAR(20),
-  FOREIGN KEY (detail_line_id) REFERENCES detail_line(id_detail_line)
+  FOREIGN KEY (detail_line_id) REFERENCES detail_line(id_detail_line) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
 CREATE TABLE tax (
@@ -62,5 +59,5 @@ CREATE TABLE tax (
   tax_coll_ttl DECIMAL(10,2),
   tax_rate DECIMAL(5,4),
   type INT,
-  FOREIGN KEY (guest_check_id) REFERENCES guest_check(id_guest_check)
+  FOREIGN KEY (guest_check_id) REFERENCES guest_check(id_guest_check) ON DELETE CASCADE
 ) ENGINE=InnoDB;

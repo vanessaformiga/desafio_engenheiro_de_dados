@@ -5,19 +5,14 @@ Este arquivo resume o planejamento e o acompanhamento das tarefas realizadas dur
 
 ## 🗂️ A Fazer
 
-
-- [ ] Escrever README do Desafio 2 com respostas e justificativas
+- [] Fazer os testes da aplicação
 - [ ] (Opcional) Desenvolver pipeline no Apache Airflow
 - [ ] Testar execução do projeto via Docker
 - [ ] Enviar o e-mail de entrega com link do repositório
-- [ ] Implementar modelo relacional em SQL (`modelo-relacional.sql`)
-- [ ] Simular chamadas das APIs com script Python (`ingestao_mock.py`)
-- [ ] Criar arquivos de exemplo para simular o Data Lake (`/data_lake/...`)
 - [] Fazer uma gravação do desafio
 - [] Escrever a documetação técnica da aplicação
 
 ## 🚧 Em Progresso
-- [ ] Criar estrutura de diretórios do Data Lake
 
 
 ## ✅ Concluído
@@ -36,3 +31,10 @@ Este arquivo resume o planejamento e o acompanhamento das tarefas realizadas dur
 - [] Ajustar os arquivos a README.md
 - [x] Criar o dicionário de dados
 - [x] Responder a segunda a segunda e a terceira questão
+- ]Criar estrutura de diretórios do Data Lake
+- [x]Implementar modelo relacional em SQL (`modelo-relacional.sql`)
+- [x] Ciar o arquivo para a criação do banco
+- [ ] Escrever README do Desafio 2 com respostas e justificativas
+- [ ] Simular chamadas das APIs com script Python (`ingestao_mock.py`)
+- [ ] Criar arquivos de exemplo para simular o Data Lake (`/data_lake/...`)
+- [] Testa a criação 

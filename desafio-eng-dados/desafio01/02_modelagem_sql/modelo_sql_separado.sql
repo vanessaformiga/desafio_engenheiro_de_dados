@@ -1,10 +1,8 @@
--- Tabela store
 CREATE TABLE store (
   id_store INT PRIMARY KEY,
   loc_ref VARCHAR(50) UNIQUE NOT NULL
 );
 
--- Tabela guest_check
 CREATE TABLE guest_check (
   id_guest_check INT PRIMARY KEY,
   store_id INT NOT NULL REFERENCES store(id_store),
@@ -25,7 +23,7 @@ CREATE TABLE guest_check (
   clsd_flag BOOLEAN
 );
 
--- Tabela detail_line
+
 CREATE TABLE detail_line (
   id_detail_line INT PRIMARY KEY,
   guest_check_id INT NOT NULL REFERENCES guest_check(id_guest_check),
@@ -41,7 +39,6 @@ CREATE TABLE detail_line (
   svc_rnd_num INT
 );
 
--- Tabela menu_item
 CREATE TABLE menu_item (
   id_menu_item INT PRIMARY KEY,
   detail_line_id INT NOT NULL REFERENCES detail_line(id_detail_line),
@@ -52,9 +49,9 @@ CREATE TABLE menu_item (
   active_taxes VARCHAR(20)
 );
 
--- Tabela tax
+
 CREATE TABLE tax (
-  id_tax SERIAL PRIMARY KEY,
+  id_tax INT PRIMARY KEY,
   guest_check_id INT NOT NULL REFERENCES guest_check(id_guest_check),
   tax_num INT,
   txbl_sls_ttl NUMERIC(10,2),
