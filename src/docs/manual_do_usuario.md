@@ -54,6 +54,14 @@ Também pode executar somente o comando
 
 python src\desafio02\ingestao_mock.py
 
+E para inserir no banco mysql 
+
+python ingestao_mock_mysql.py
+
+Para salvar os registros no banco
+
+python src\desafio02\ingestao_mock_mysql.py
+
 ``````
 
 ## Observações:
