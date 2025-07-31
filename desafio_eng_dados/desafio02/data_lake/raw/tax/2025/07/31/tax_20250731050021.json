@@ -1,0 +1,14 @@
+[
+  {
+    "id_tax": 401,
+    "guest_check_id": 101,
+    "type": 1,
+    "tax_rate": 0.05
+  },
+  {
+    "id_tax": 402,
+    "guest_check_id": 102,
+    "type": 2,
+    "tax_rate": 0.1
+  }
+]

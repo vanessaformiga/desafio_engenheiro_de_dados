@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:9.3
+    container_name: mysql_desafio
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: desafio_engenheiro_de_dados
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+
+  app:
+    build: .
+    container_name: ingestao_mock
+    depends_on:
+      - mysql
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DB: desafio_engenheiro_de_dados
+      MYSQL_PATH: modelo-relacional.sql
+    volumes:
+      - ./data_lake:/app/data_lake
+      - ./logs:/app/logs
+    command: ["python", "ingestao_mock.py"]

@@ -2,6 +2,9 @@ from dotenv import load_dotenv
 import os
 import mysql.connector
 from mysql.connector import Error
+import logging
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 load_dotenv()  
 
@@ -12,9 +15,12 @@ MYSQL_PORT = int(os.getenv("MYSQL_PORT"))
 MYSQL_DB = os.getenv("MYSQL_DB")
 MYSQL_PATH = os.getenv("MYSQL_PATH")
 
+
 def criar_banco_e_tabelas():
+    connection = None
+    cursor = None
     try:
-       
+        
         connection = mysql.connector.connect(
             host=MYSQL_HOST,
             port=MYSQL_PORT,
@@ -23,18 +29,19 @@ def criar_banco_e_tabelas():
         )
 
         cursor = connection.cursor()
-       
-        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {MYSQL_DB};")
-        print(f"Banco '{MYSQL_DB}' criado ou já existente.")
 
-    
+        
+        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {MYSQL_DB};")
+        logging.info(f"Banco '{MYSQL_DB}' criado ou já existente.")
+
+        
         cursor.execute(f"USE {MYSQL_DB};")
 
-    
+        
         with open(MYSQL_PATH, 'r', encoding='utf-8') as f:
             sql_script = f.read()
 
-
+        
         comandos = sql_script.split(';')
 
         for comando in comandos:
@@ -42,16 +49,27 @@ def criar_banco_e_tabelas():
             if comando:
                 cursor.execute(comando)
 
+        
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS load_log (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                file_name VARCHAR(255) UNIQUE NOT NULL,
+                load_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+        """)
+
         connection.commit()
-        print("Tabelas criadas com sucesso!")
+        logging.info("Tabelas criadas com sucesso, incluindo load_log!")
 
     except Error as e:
-        print("Erro ao criar banco/tabelas:", e)
+        logging.error(f"Erro ao criar banco/tabelas: {e}")
     finally:
-        if connection.is_connected():
+        if cursor:
             cursor.close()
+        if connection and connection.is_connected():
             connection.close()
-            print("Conexão encerrada.")
+            logging.info("Conexão encerrada.")
+
 
 if __name__ == "__main__":
     criar_banco_e_tabelas()

@@ -1,0 +1,8 @@
+2025-07-31 06:37:25,575 [INFO] Iniciando simulação das APIs...
+2025-07-31 06:37:25,577 [INFO] Arquivo salvo: data_lake\raw\store\2025\07\31\store_20250731063725.json
+2025-07-31 06:37:25,578 [INFO] Arquivo salvo: data_lake\raw\guest_check\2025\07\31\guest_check_20250731063725.json
+2025-07-31 06:37:25,579 [INFO] Arquivo salvo: data_lake\raw\detail_line\2025\07\31\detail_line_20250731063725.json
+2025-07-31 06:37:25,580 [INFO] Arquivo salvo: data_lake\raw\menu_item\2025\07\31\menu_item_20250731063725.json
+2025-07-31 06:37:25,581 [INFO] Arquivo salvo: data_lake\raw\tax\2025\07\31\tax_20250731063725.json
+2025-07-31 06:37:25,581 [INFO] Simulação finalizada com sucesso!
+2025-07-31 06:37:25,581 [INFO] Logs salvos em: logs\ingestao_mock_20250731_063725.log

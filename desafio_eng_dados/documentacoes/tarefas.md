@@ -4,7 +4,6 @@
 - Implementar a solução
 - Fazer os testes
 - Coloca o docker
-- E talvez a implementação do airflow
 
 # Cronograma Técnico — Desafio Engenharia de Dados Coco Bambu
 
@@ -17,44 +16,33 @@
 - [x] Planejar a estrutura de diretórios do Data Lake
 - [x]  Listar os pontos que serão documentados no README
 
-
 ## 💻 Fase 2 — Implementar a Solução
 
 **Objetivo:** Codificar os scripts e estrutura conforme o planejado.
 
 - [x]  Criar o script SQL com todas as tabelas (`modelo-relacional.sql`)
-- [ ]  Criar script Python para simular chamadas às 5 APIs
-- [ ]  Armazenar as respostas mockadas na estrutura de pastas do Data Lake
+- [x]  Criar script Python para simular chamadas às 5 APIs
+- [x]  Armazenar as respostas mockadas na estrutura de pastas do Data Lake
 - [x]  Documentar todas as decisões no `README.md`
-
 
 ## 🧪 Fase 3 — Testes
 
 **Objetivo:** Verificar se o modelo e os scripts funcionam corretamente.
 
-- [ ]  Validar o schema SQL com dados fictícios
-- [ ]  Testar ingestão e armazenamento das respostas simuladas
-- [ ]  Verificar se a estrutura permite consultas e versionamento
-
+- [x]  Validar o schema SQL com dados fictícios
+- [x]  Testar ingestão e armazenamento das respostas simuladas
+- [x]  Verificar se a estrutura permite consultas e versionamento
 
 ## 🐳 Fase 4 — Dockerização
 
 **Objetivo:** Criar um ambiente isolado e replicável.
 
-- [ ]  Criar `Dockerfile` com Python + dependências
-- [ ]  Criar `docker-compose.yml` com banco (MySQL/Postgres) + volume para o data lake
-- [ ]  Adicionar instruções de uso no `README.md`
+- [x]  Criar `Dockerfile` com Python + dependências
+- [x]  Criar `docker-compose.yml` com banco (MySQL/Postgres) + volume para o data lake
+- [x]  Adicionar instruções de uso no `README.md`
 
 
-## ⚙️ Fase 5 — (Opcional) Airflow
-
-**Objetivo:** Automatizar a ingestão de dados no data lake.
-
-- [ ]  Criar DAG simples para consumir as APIs mockadas
-- [ ]  Salvar os arquivos no data lake com estrutura de partição
-- [ ]  Documentar como rodar e visualizar a DAG no Airflow
-
-## Fase 6 — Ajustes Finais e Entrega
+## Fase 5 — Ajustes Finais e Entrega
 
 - [ ]  Revisar a estrutura do repositório (nomes de arquivos, organização, README)
 - [ ]  Garantir que todos os arquivos estejam comitadinhos e o README esteja completo

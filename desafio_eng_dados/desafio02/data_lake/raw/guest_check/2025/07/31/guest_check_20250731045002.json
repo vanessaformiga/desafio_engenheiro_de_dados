@@ -1,0 +1,16 @@
+[
+  {
+    "id_guest_check": 101,
+    "store_id": 1,
+    "chk_num": 1,
+    "chk_ttl": 120.5,
+    "opn_bus_dt": "2025-07-31"
+  },
+  {
+    "id_guest_check": 102,
+    "store_id": 2,
+    "chk_num": 1,
+    "chk_ttl": 89.9,
+    "opn_bus_dt": "2025-07-31"
+  }
+]
