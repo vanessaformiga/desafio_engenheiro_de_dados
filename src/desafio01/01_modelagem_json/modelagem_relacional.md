@@ -1,4 +1,4 @@
-**Etapas da Modelagem Relacional**
+# Etapas da Modelagem Relacional
 
 A partir da estrutura do arquivo do ERP.json, podemos identificar:
 
@@ -14,7 +14,8 @@ taxes - impostos aplicados
 
 As principais entidades separadas terão em suas ligações através do relacionamentos as chaves primárias e a depender do relacionamento as estrangeiras.
 
-Modelagem Relacional com Chaves
+
+**Modelagem Relacional com Chaves**
 
 **Tabela store**
 

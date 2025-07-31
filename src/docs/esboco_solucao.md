@@ -1,4 +1,5 @@
-Solução para o Desafio Técnico – Engenharia de Dados
+## Solução para o Desafio Técnico – Engenharia de Dados
+
 1. Entendimento do Problema
 O desafio está dividido em duas partes:
 
@@ -9,12 +10,11 @@ Integrar com uma API contendo 5 endpoints, que fornecem informações financeira
 2. Estratégia de Solução
 Dividi a resolução em etapas:
 
-Análise do JSON.
+- Análise do JSON.
 
-Modelagem das tabelas SQL.
+- Modelagem das tabelas SQL.
 
-Simulação com 5 endpoints, cujo método é POST; um exemplo é fornecido.
+- Simulação com 5 endpoints, cujo método é POST; um exemplo é fornecido.
 
-Ingestão dos dados no data lake (camada raw).
+- Ingestão dos dados no data lake (camada raw).
 
-Armazenamento em formato otimizado (Parquet) e estruturação para consultas analíticas.

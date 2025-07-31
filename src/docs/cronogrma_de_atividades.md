@@ -16,7 +16,7 @@
 - [x] Planejar a estrutura de diretórios do Data Lake
 - [x]  Listar os pontos que serão documentados no README
 
-## 💻 Fase 2 — Implementar a Solução
+## Fase 2 — Implementar a Solução
 
 **Objetivo:** Codificar os scripts e estrutura conforme o planejado.
 
@@ -32,15 +32,6 @@
 - [x]  Validar o schema SQL com dados fictícios
 - [x]  Testar ingestão e armazenamento das respostas simuladas
 - [x]  Verificar se a estrutura permite consultas e versionamento
-
-## Fase 4 — Dockerização
-
-**Objetivo:** Criar um ambiente isolado e replicável.
-
-- [x]  Criar `Dockerfile` com Python + dependências
-- [x]  Criar `docker-compose.yml` com banco (MySQL/Postgres) + volume para o data lake
-- [x]  Adicionar instruções de uso no `README.md`
-
 
 ## Fase 5 — Ajustes Finais e Entrega
 

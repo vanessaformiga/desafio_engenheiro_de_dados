@@ -1,4 +1,4 @@
-# Descreva a abordagem escolhida em detalhes. Justifique a escolha
+# Descreva a abordagem escolhida em detalhes
 
 ## A abordagem escolhida
 

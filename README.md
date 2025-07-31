@@ -39,7 +39,6 @@ cd src
 
 Depois acesse a pasta desafio02
 
-
 cd desafio02
 
 E execute 
@@ -65,7 +64,6 @@ DESAFIO_ENGENHEIRO_DE_DADOS/
 ├── src/
 │   ├── desafio01/                 # Modelagem do JSON e SQL do primeiro desafio
 │   ├── desafio02/                 # Scripts de ingestão e testes com endpoints
-│   ├── docker/                    # Arquivos para build e execução via Docker
 │   ├── docs/                      # Documentação adicional do projeto
 │   └── __init__.py                # Torna o diretório src um pacote Python
 │

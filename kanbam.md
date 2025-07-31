@@ -24,7 +24,7 @@ Este arquivo resume o planejamento e o acompanhamento das tarefas realizadas dur
 - [x] Criar o dicionário de dados
 - [x] Responder a segunda a segunda e a terceira questão
 - [x] Criar a estrutura de diretórios do Data Lake
-- [x]Implementar modelo relacional em SQL (`modelo-relacional.sql`)
+- [x] Implementar modelo relacional em SQL (`modelo-relacional.sql`)
 - [x] Escrever README do Desafio 2 com respostas e justificativas
 - [x] Simular chamadas das APIs com script Python (`ingestao_mock.py`)
 - [x] Criar arquivos de exemplo para simular o Data Lake (`/data_lake/...`)
@@ -33,14 +33,12 @@ Este arquivo resume o planejamento e o acompanhamento das tarefas realizadas dur
 - [x] Testar a criação dos dados com script
 - [x] Fazer os testes com a aplicação
 - [x] Criar a pasta de logs
-- [x] Criar as configurações do docker
 - [x] Fazer os testes com a aplicação utilizando o pytest
 - [x] Escrever a documetação técnica da aplicação
-- [x] Testar execução do projeto via Docker
 - [x] Fazer uma gravação explicando o desafio
 - [x] Revisar a escrita do projeto
-- [x] Colocar como melhorias futuras fazer a implementação do airflow 
+- [x] Colocar como melhorias futuras fazer a implementação do airflow e inserir o docker
 - [x] Revisar a estrutura do projeto dos módulos e arquivos
-- [] Enviar o e-mail de entrega com link do repositório
+- [x] Enviar o e-mail de entrega com link do repositório
 
 

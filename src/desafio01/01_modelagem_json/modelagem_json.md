@@ -189,8 +189,7 @@ Contexto da solução com base no arquivo do ERP.json fornecido referente ao uma
 }
 
 ```
-
-### Esquema do JSON:
+**Esquema JSON**
 
 A estrutura JSON pode ser descrita hierarquicamente da seguinte forma:
 
