@@ -1,16 +1,24 @@
-# Desafio Engenheiro de Dados
+# Manual de Usuário
 
-# Objetivo: 
+## Descrição do Projeto:
 
-O objetivo deste desafio é, a partir de um arquivo JSON contendo um pedido, criar as tabelas SQL necessárias e implementar uma API com 5 endpoints que sejam capazes de se comunicar com o data lake.
+Este projeto tem como objetivo realizar a injeção de arquivos no banco de dados após testes com 5 endpoints que simulam respostas de APIs.
+
+As principais etapas incluem:
+
+Geração de arquivos JSON com base em uma hierarquia pré-definida;
+Criação automática das tabelas no MySQL;
+Testes de integração com os dados injetados no banco.
 
 
-## Visão geral:
+## Tecnologias:
+Python, Mysql
 
-Esta aplicação tem como finalidade, a partir de um JSON fornecido, elaborar a modelagem das tabelas necessárias para a solução. A implementação será testada por meio de 5 endpoints responsáveis pela inserção dos dados, utilizando um script com dados mockados.
+## Instalações e Execução do Projeto:
 
 
-## Instalçôes e Execuções:
+## Instalações e Execução:
+
 
 ### Instalções:
 
@@ -52,12 +60,13 @@ python src\desafio02\ingestao_mock.py
 
 ``````
 
-## Bibliotecas Utilizadas:
 
-- python
-- mysql
+## Observações:
 
-## Estrutura das Pastas:
+Para a utilização de testes com a criação das tabelas pode ser executado o script 
+script_banco que está disponível no repositário dentro da pasta do desafio02. Que já realiza a crição do banco com as tabelas.
+
+## Arquitetura / Estrutura do Projeto
 
 ``````
 DESAFIO_ENGENHEIRO_DE_DADOS/
@@ -77,12 +86,12 @@ DESAFIO_ENGENHEIRO_DE_DADOS/
 ├── kanbam.md                      # Kanban e planejamento do desafio
 ├── README.md                      # Manual principal do projeto
 └── requirements.txt               # Dependências Python
-``````
 
+``````
 
 ## Testes
 
-Para os testes executar dentro do projeto principal executar
+Para os testes executar dentro do projeto principal executar o comando pytest dentro do repositório principal.
 
 ``````
 pytest
@@ -92,7 +101,18 @@ pytest
 pytest -v
 ``````
 
-## Contato
+## Melhorias e Futuras implementações:
 
-- Projeto desenvolvido por Vanessa Formiga
-- Contato vanessaformiga21@gmail.com
+Criação de uma DAG no Apache Airflow para agendamento do pipeline (opcional);
+
+Implementação de CI/CD com GitHub Actions para:
+
+- Executar testes automatizados a cada push;
+
+- Validar o schema do banco e pipelines;
+
+- Publicar imagens Docker para facilitar deploy.
+
+### Autores e Contato
+
+Projeto criado por Vanessa Formiga

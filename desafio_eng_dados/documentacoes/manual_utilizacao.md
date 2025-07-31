@@ -1,1 +1,0 @@
-# Manual de Usuário Para a utilizção da aplicação

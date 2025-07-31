@@ -1,4 +1,0 @@
-2025-07-31 06:30:25,282 - ERROR - Erro ao inserir dados: 1062 (23000): Duplicate entry 'Unidade A' for key 'store.loc_ref'
-2025-07-31 06:30:25,284 - INFO - Conexão encerrada.
-2025-07-31 06:31:14,051 - ERROR - Erro ao inserir dados: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`desafio_engenheiro_de_dados`.`detail_line`, CONSTRAINT `detail_line_ibfk_1` FOREIGN KEY (`guest_check_id`) REFERENCES `guest_check` (`id_guest_check`) ON DELETE CASCADE)
-2025-07-31 06:31:14,053 - INFO - Conexão encerrada.

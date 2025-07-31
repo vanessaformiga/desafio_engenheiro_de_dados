@@ -1,0 +1,3 @@
+### Considere que a resposta do endpoint getGuestChecks foi alterada, por exemplo,  guestChecks.taxes foi renomeado para guestChecks.taxation. O que isso implicaria? 
+
+Se ocorrer a troca no nome do campo, ocorreriam erros, pois esses dados não seriam recebidos nem carregados. Dessa forma, a aplicação não teria os dados atualizados corretamente. Além disso, causaria erros na inserção no banco caso a nomenclatura das tabelas ou campos continuasse a mesma da versão anterior.
