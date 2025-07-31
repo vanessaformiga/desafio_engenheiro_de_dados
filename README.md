@@ -1,6 +1,6 @@
 # Desafio Engenheiro de Dados
 
-# Objetivo: 
+## Objetivo: 
 
 O objetivo deste desafio é, a partir de um arquivo JSON contendo um pedido, criar as tabelas SQL necessárias e implementar uma API com 5 endpoints que sejam capazes de se comunicar com o data lake.
 
@@ -34,7 +34,7 @@ Para a execução dos script:
 
 Acesse a pasta 
 
-````
+``````
 cd src 
 
 Depois acesse a pasta desafio02
@@ -51,7 +51,7 @@ python src\desafio02\ingestao_mock.py
 
 ``````
 
-## Bibliotecas Utilizadas:
+### Bibliotecas Utilizadas:
 
 - python
 - mysql

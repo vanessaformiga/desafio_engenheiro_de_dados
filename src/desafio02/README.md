@@ -11,9 +11,9 @@ Para o desenvolvimento e execução da parte 02 do desafio técnico, foi criado 
 ``````
 data_lake/
 │
-├── raw/
-├── schemas/
-├── metadata/
 ├── log/
-└── processed/
+├── metadata/
+├── processed/
+├── raw/
+└── schemas/
 `````

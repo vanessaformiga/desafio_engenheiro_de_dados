@@ -3,7 +3,7 @@
 - Definir a solução
 - Implementar a solução
 - Fazer os testes
-- Coloca o docker
+
 
 # Cronograma Técnico — Desafio Engenharia de Dados Coco Bambu
 
@@ -33,7 +33,7 @@
 - [x]  Testar ingestão e armazenamento das respostas simuladas
 - [x]  Verificar se a estrutura permite consultas e versionamento
 
-## Fase 5 — Ajustes Finais e Entrega
+## Fase 4 — Ajustes Finais e Entrega
 
 - [x]  Revisar a estrutura do repositório (nomes de arquivos, organização, README)
 - [x]  Garantir que todos os arquivos estejam comitadinhos e o README esteja completo

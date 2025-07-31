@@ -61,7 +61,7 @@ python src\desafio02\ingestao_mock.py
 Para a utilização de testes com a criação das tabelas pode ser executado o script 
 script_banco que está disponível no repositário dentro da pasta do desafio02. Que já realiza a crição do banco com as tabelas.
 
-## Arquitetura / Estrutura do Projeto
+## Arquitetura / Estrutura do Projeto:
 
 ``````
 DESAFIO_ENGENHEIRO_DE_DADOS/
@@ -83,7 +83,7 @@ DESAFIO_ENGENHEIRO_DE_DADOS/
 
 ``````
 
-## Testes
+## Testes:
 
 Para os testes executar dentro do projeto principal executar o comando pytest dentro do repositório principal.
 
@@ -107,6 +107,6 @@ Implementação de CI/CD com GitHub Actions para:
 
 - Publicar imagens Docker para facilitar deploy.
 
-## Autores e Contato
+## Autores e Contato:
 
 Projeto criado por Vanessa Formiga
